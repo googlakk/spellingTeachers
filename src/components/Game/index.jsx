@@ -39,7 +39,7 @@ const Game = () => {
 
   const getWordsList = () => {
     axios.get(
-      `http://localhost:3001/${stage.title.toLowerCase()}/${levelId}`
+      `https://spelling-8e821406279a.herokuapp.com/${stage.title.toLowerCase()}/${levelId}`
     ).then((res) => {
       setWords(res.data.words)
     })
